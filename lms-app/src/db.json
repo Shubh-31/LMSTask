@@ -1,0 +1,195 @@
+{
+    "courses": [
+      {
+        "id": 1,
+        "title": "React Basics",
+        "description": "Learn React from scratch, including JSX, components, and state management.",
+        "difficulty": "Beginner",
+        "duration": "6 weeks",
+        "chapters": [
+          "Introduction to React",
+          "JSX and Rendering",
+          "Components and Props",
+          "State and Lifecycle",
+          "Handling Events",
+          "Conditional Rendering",
+          "Lists and Keys",
+          "Forms and Controlled Components",
+          "React Router Basics",
+          "Hooks (useState, useEffect)"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "JavaScript Mastery",
+        "description": "Advanced JavaScript concepts, ES6+, async programming, and design patterns.",
+        "difficulty": "Intermediate",
+        "duration": "8 weeks",
+        "chapters": [
+          "JavaScript Fundamentals",
+          "Closures and Scope",
+          "ES6+ Features",
+          "Asynchronous JavaScript (Promises & Async/Await)",
+          "JavaScript Design Patterns",
+          "Event Loop & Concurrency",
+          "Working with APIs",
+          "DOM Manipulation",
+          "Web Performance Optimization",
+          "JavaScript Testing (Jest, Mocha)"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Next.js Fundamentals",
+        "description": "Learn server-side rendering, static site generation, and API routes with Next.js.",
+        "difficulty": "Intermediate",
+        "duration": "6 weeks",
+        "chapters": [
+          "Introduction to Next.js",
+          "Pages and Routing",
+          "Server-side Rendering (SSR)",
+          "Static Site Generation (SSG)",
+          "API Routes",
+          "Styling in Next.js",
+          "Authentication with NextAuth",
+          "Deployment Strategies",
+          "Performance Optimization",
+          "Building a Full-stack Next.js App"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Python for Beginners",
+        "description": "Get started with Python programming, covering basics to advanced concepts.",
+        "difficulty": "Beginner",
+        "duration": "10 weeks",
+        "chapters": [
+          "Python Basics and Setup",
+          "Variables and Data Types",
+          "Control Structures",
+          "Functions and Modules",
+          "Object-Oriented Programming (OOP)",
+          "Exception Handling",
+          "File Handling",
+          "Working with Databases",
+          "Web Scraping with BeautifulSoup",
+          "Automating Tasks with Python"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Machine Learning with Python",
+        "description": "Build AI models using Python and machine learning libraries like TensorFlow and scikit-learn.",
+        "difficulty": "Advanced",
+        "duration": "12 weeks",
+        "chapters": [
+          "Introduction to Machine Learning",
+          "Data Preprocessing",
+          "Supervised Learning",
+          "Unsupervised Learning",
+          "Deep Learning Basics",
+          "Neural Networks with TensorFlow",
+          "Hyperparameter Tuning",
+          "Model Evaluation and Validation",
+          "Natural Language Processing (NLP)",
+          "Deploying ML Models"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Cybersecurity Essentials",
+        "description": "Learn ethical hacking, penetration testing, and network security.",
+        "difficulty": "Advanced",
+        "duration": "10 weeks",
+        "chapters": [
+          "Introduction to Cybersecurity",
+          "Networking Basics",
+          "Cryptography Fundamentals",
+          "Penetration Testing",
+          "Malware Analysis",
+          "Firewall and IDS/IPS",
+          "Web Application Security",
+          "Secure Coding Practices",
+          "Digital Forensics",
+          "Cybersecurity Career Pathways"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "UI/UX Design Fundamentals",
+        "description": "Master user interface and user experience design with Figma and Adobe XD.",
+        "difficulty": "Beginner",
+        "duration": "6 weeks",
+        "chapters": [
+          "Introduction to UI/UX",
+          "User Research",
+          "Wireframing and Prototyping",
+          "Typography and Colors",
+          "UI Components and Design Systems",
+          "Usability Testing",
+          "Mobile App Design",
+          "Web Design Principles",
+          "Interaction Design",
+          "Portfolio Building"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "DevOps & CI/CD",
+        "description": "Automate deployment, testing, and monitoring using DevOps tools.",
+        "difficulty": "Advanced",
+        "duration": "8 weeks",
+        "chapters": [
+          "Introduction to DevOps",
+          "Version Control with Git",
+          "Continuous Integration (CI)",
+          "Continuous Deployment (CD)",
+          "Containerization with Docker",
+          "Kubernetes Basics",
+          "Infrastructure as Code (Terraform)",
+          "Monitoring & Logging",
+          "Security in DevOps",
+          "Building Scalable DevOps Pipelines"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Blockchain and Cryptocurrency",
+        "description": "Understand blockchain technology, smart contracts, and crypto trading.",
+        "difficulty": "Intermediate",
+        "duration": "6 weeks",
+        "chapters": [
+          "Blockchain Fundamentals",
+          "Cryptography & Hashing",
+          "Smart Contracts & Ethereum",
+          "Consensus Mechanisms",
+          "Building DApps",
+          "NFTs and Metaverse",
+          "Crypto Wallets & Security",
+          "Decentralized Finance (DeFi)",
+          "Blockchain Scaling Solutions",
+          "Regulations and Future of Blockchain"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Full Stack Web Development",
+        "description": "Learn HTML, CSS, JavaScript, React, Node.js, and databases to build full-stack applications.",
+        "difficulty": "Advanced",
+        "duration": "12 weeks",
+        "chapters": [
+          "HTML & CSS Basics",
+          "JavaScript ES6+",
+          "Frontend with React",
+          "State Management (Redux/Zustand)",
+          "Backend with Node.js & Express",
+          "Working with MongoDB",
+          "Authentication (JWT & OAuth)",
+          "REST API Development",
+          "GraphQL & WebSockets",
+          "Deploying Full Stack Apps"
+        ]
+      }
+    ]
+  }
+  
