@@ -3,20 +3,28 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import useEnrollmentStore from "./store/enrollmentStore";
 import useProgressStore from "./store/progressStore";
+import SkeletonLoader from "./SkeletonLoader";
 
 const CourseDetails = () => {
   const { id } = useParams();
   const [course, setCourse] = useState(null);
+  const [loading, setLoading] = useState(true);
   const { enrolledCourses, enrollCourse } = useEnrollmentStore();
   const { progress, completeChapter } = useProgressStore();
 
   useEffect(() => {
     axios.get(`http://localhost:5000/courses/${id}`)
-      .then((res) => setCourse(res.data))
-      .catch((err) => console.error("Error fetching course:", err));
+      .then((res) => {
+        setCourse(res.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching course:", err);
+        setLoading(false);
+      });
   }, [id]);
 
-  if (!course) return <p>Loading...</p>;
+  if (loading) return <div className="p-10"><SkeletonLoader /></div>; 
 
   const isEnrolled = enrolledCourses.includes(course.id);
 
@@ -36,7 +44,7 @@ const CourseDetails = () => {
         <h1 className="text-3xl font-bold text-gray-800">{course.title}</h1>
         <p className="text-gray-600 mt-2">{course.description}</p>
 
-     
+       
         <div className="mt-6">
           <h2 className="text-2xl font-semibold text-gray-800">Chapters</h2>
           <ul className="mt-4 space-y-3">
@@ -48,6 +56,7 @@ const CourseDetails = () => {
                 <li key={index} className="flex items-center justify-between bg-gray-200 p-3 rounded-lg">
                   <span className="text-lg">{chapter}</span>
                   
+              
                   {isEnrolled && (
                     <button
                       className={`px-4 py-2 rounded-lg text-white ${
