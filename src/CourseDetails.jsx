@@ -31,34 +31,35 @@ const CourseDetails = () => {
   const isEnrolled = enrolledCourses.includes(course.id);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-10">
-      <div className="bg-white shadow-lg rounded-lg p-6 max-w-3xl mx-auto relative">
+    <div className="min-h-screen bg-gradient-to-br from-purple-100 to-blue-200 p-10">
+      <div className="bg-white shadow-2xl rounded-lg p-8 max-w-3xl mx-auto relative">
+        
         {!isEnrolled && (
           <button
-            className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition cursor-pointer"
+            className="absolute top-5 right-5 bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600 transition cursor-pointer transform hover:scale-105"
             onClick={() => enrollCourse(course.id)}
           >
             Enroll Now
           </button>
         )}
 
-        <h1 className="text-3xl font-bold text-gray-800">{course.title}</h1>
-        <p className="text-gray-600 mt-2">{course.description}</p>
+        <h1 className="text-4xl font-extrabold text-gray-800">{course.title}</h1>
+        <p className="text-lg text-gray-700 mt-4">{course.description}</p>
 
-        <div className="mt-6">
-          <h2 className="text-2xl font-semibold text-gray-800">Chapters</h2>
-          <ul className="mt-4 space-y-3">
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold text-gray-800">📚 Course Chapters</h2>
+          <ul className="mt-4 space-y-4">
             {course.chapters.map((chapter, index) => {
               const isCompleted = progress[course.id]?.includes(index);
               const isDisabled = index > 0 && !progress[course.id]?.includes(index - 1);
 
               return (
-                <li key={index} className="flex items-center justify-between bg-gray-200 p-3 rounded-lg">
-                  <span className="text-lg">{chapter}</span>
+                <li key={index} className="flex items-center justify-between bg-gray-100 p-4 rounded-lg shadow-md">
+                  <span className="text-lg font-medium">{chapter}</span>
                   
                   {isEnrolled && (
                     <button
-                      className={`px-4 py-2 rounded-lg text-white ${
+                      className={`px-5 py-2 rounded-lg text-white font-semibold transition transform hover:scale-105 ${
                         isCompleted
                           ? "bg-green-500 cursor-not-allowed"
                           : isDisabled
@@ -68,7 +69,7 @@ const CourseDetails = () => {
                       onClick={() => completeChapter(course.id, index)}
                       disabled={isCompleted || isDisabled}
                     >
-                      {isCompleted ? "Completed ✅" : "Finish"}
+                      {isCompleted ? "✅ Completed" : "Finish"}
                     </button>
                   )}
                 </li>
