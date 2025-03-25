@@ -10,7 +10,7 @@ const CourseList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/db.json") // ✅ Fetch from public folder
+    fetch("/db.json") 
       .then((res) => res.json())
       .then((data) => {
         setCourses(data.courses);

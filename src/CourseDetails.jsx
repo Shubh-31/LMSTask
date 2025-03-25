@@ -12,7 +12,7 @@ const CourseDetails = () => {
   const { progress, completeChapter } = useProgressStore();
 
   useEffect(() => {
-    fetch("/db.json") // ✅ Fetch from public folder
+    fetch("/db.json") 
       .then((res) => res.json())
       .then((data) => {
         const foundCourse = data.courses.find((c) => c.id === parseInt(id));
